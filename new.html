@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magnific Popup Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <style>
+    /* Your custom styles can go here */
+  </style>
+</head>
+<body>
+
+<!-- Trigger button -->
+<button class="open-popup">Open Magnific Popup</button>
+
+<!-- Content to be shown in the popup -->
+<div id="magnific-popup" class="white-popup mfp-hide">
+  <img src="your_image_url.jpg" alt="Popup Image">
+</div>
+
+<script>
+  // jQuery code to initialize Magnific Popup
+  $(document).ready(function () {
+    $('.open-popup').magnificPopup({
+      type: 'inline',
+      preloader: false,
+      focus: '#magnific-popup',
+      modal: true
+    });
+  });
+</script>
+
+</body>
+</html>
